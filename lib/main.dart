@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_designs/src/screens/basic_design.dart';
+import 'package:flutter_designs/src/screens/screens.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,8 +10,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "App",
       home: _TmpHomeScreen(),
-      initialRoute: 'basic_design',
-      routes: {'basic_design': ((context) => BasicDesignScreen())},
+      initialRoute: 'scroll_design',
+      routes: {
+        'basic_design': ((context) => BasicDesignScreen()),
+        'scroll_design': (context) => ScrollScreen()
+      },
     );
   }
 }
